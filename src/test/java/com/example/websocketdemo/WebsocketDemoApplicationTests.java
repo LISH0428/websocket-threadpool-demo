@@ -8,7 +8,7 @@ import org.springframework.scheduling.concurrent.CustomizableThreadFactory;
 
 import java.util.concurrent.*;
 
-@SpringBootTest
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 class WebsocketDemoApplicationTests {
     @Autowired
     ThreadPoolExecutor threadPoolInstance;

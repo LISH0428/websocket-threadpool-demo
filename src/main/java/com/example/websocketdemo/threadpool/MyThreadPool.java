@@ -7,7 +7,7 @@ import java.util.concurrent.BlockingQueue;
 
 
 public class MyThreadPool {
-
+//手写
     private int maxThreadNum;
     private BlockingQueue<Runnable> workQueue;
     public Set<WorkThread> workThreads;
@@ -61,3 +61,4 @@ public class MyThreadPool {
         }
     }
 }
+

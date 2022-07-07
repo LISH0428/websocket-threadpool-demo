@@ -11,6 +11,7 @@ import java.util.concurrent.TimeUnit;
 
 @Configuration
 public class ThreadPoolConf {
+    //通常做法
     @Bean(value = "threadPoolInstance")
     public ThreadPoolExecutor createThreadPoolExecutor(){
         ThreadFactory threadFactory=new CustomizableThreadFactory("myThreadPool");
